@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { HiMenu, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 import { images } from '../../constants';
@@ -23,7 +23,7 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <HiMenu onClick={() => setToggle(true)} />
 
         {toggle && (
           <motion.div
